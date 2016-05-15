@@ -1,0 +1,6 @@
+Problema 2:
+
+Agora os 5 quadrados devem ser da cor #AAE e devem ter o mesmo tamanho com 120px;
+Cada div deve conter 1 circulo interno de cor laranja com dimensões 40x40px, para isso use
+a pseudo-classe css :before. Cada circulo deve ser posicionado relativamente à -20px
+no topo e na esquerda.

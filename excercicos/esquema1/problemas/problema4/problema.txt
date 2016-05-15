@@ -1,0 +1,4 @@
+Problema 4:
+
+As cores dos circulos devem ir escurecendo em 5% da cor laranja respectivamente.
+E a fonte das letras deve clarear em 15% respectivamente.

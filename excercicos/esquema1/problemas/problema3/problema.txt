@@ -1,0 +1,4 @@
+Problema 3:
+
+Em cada circulo deve conter uma letra em sequancia de A à E.  A fonte deve ser 
+sans-serif, bold, 16px e de cor branca, e deve estar posicionada no centro.

@@ -1,0 +1,13 @@
+ 
+Esquema 1:
+
+Em uma div de class .wrapper, existem 5 div não denomindas. 
+Iremos usá-las para montarmos alguns elementos na página html. 
+Baseado nisso solucione os problemas a seguir.
+
+
+Problema 1:
+
+Todas as 5 divs devem ser quadradas com fundo verde, devem estar lado a lado com margem de 20px.
+Os quadrados devem ser de tamanho 100px exceto as duas primeira que devem ser de 60px
+

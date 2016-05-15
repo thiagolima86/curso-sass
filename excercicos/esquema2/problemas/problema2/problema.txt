@@ -1,0 +1,4 @@
+Problema 2:
+
+Copie todo o css da primeira div para a segunda usando o @extend. Depois faça uma animação linear da segunda div para que ela fique girando infinitamente.
+O tempo do giro deve ser de 1 segundo, utilize @mixins para lhe ajudar. 

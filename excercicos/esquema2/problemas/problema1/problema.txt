@@ -1,0 +1,25 @@
+Problema 1:
+
+Um quadrado passa uma linha diagonal imaginária. Essa linha representa a divisão entre dois triângulos retangulos. 
+A linha diagonal representa a hipotenusa dos triângulos e os lados do quadrado representam a os catetos, que são de valores iguais.
+Pensando nisso podemos construir uma função no sass para receber a diagonal do retangulo e descobrir o valor do seu lado, usando o teorema de Pitágoras.
+Aplique Um quadrado na primeira div que está dentro da class .wrapper, de diagonal 120px  e fundo purple
+ 
+ Teorema de Pitagoras:
+
+ _____________
+ |          /|
+ |        /  |
+ |    h /    |c
+ |    /      |
+ |  /        |
+ |/__________|
+ 		c
+
+ h² = c² + c²
+ h² = 2 * c²;
+ h = sqrt(2 * c²)
+ h = c * sqrt(2)
+ ------------------
+ c = h /  sqrt(2)
+ ------------------
