@@ -1,0 +1,50 @@
+@mixin categorias($cor){
+	border:1px solid lighten($cor, 20%);
+	background: lighten($cor, 45%);
+	color: darken($cor, 20%);
+	&:before{
+		background-color:lighten($cor, 30%);
+	}
+}
+.categorias{
+	margin-top:$margin-1;
+	.categoria-lista{
+		a{
+			text-decoration:none;
+			@include column(4);
+			span{
+				/* border:1px solid #CCC; */
+				/* @include categorias(red); */ //será removido após a criação do loop each
+				display: block;
+				padding: 20px;
+				padding-left:60px; //colocar após definir before
+				font-size: 18px;
+				font-weight: bold;				
+				&:before{
+					/* background:red; */
+					display: block;
+					content: " ";
+					width:60px;
+					height:100%;
+					position: absolute;
+				    top: 0;
+				    left: 0;
+				    background-image:url(../images/icon-camiseta.png);
+				    background-repeat:no-repeat;
+				    background-position:center;
+				}
+			}
+			/* Essa parte é explicada depois do before */
+			$map-color : (red, cyan, #0F0);
+			$i:1;
+			@each $color in	$map-color{
+				&:nth-child(#{$i}){
+					span{
+						@include categorias($color);
+					}
+				}
+				$i:$i+1;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+footer.links{
+	margin-top:$margin-2;
+	background:#f6f6f6;
+	border-top: 1px solid #DDD;
+	padding:20px 0;
+	
+	.coluna{
+		@include column(4);
+		h2{
+			color: #333;
+		    font-weight: 300;
+		    font-size: 18px;
+		}
+		ul.link-list{
+			margin-top: $margin-1;
+			list-style: none;
+			li{
+	    		font-size: 12px;
+	    		a{
+	    			$cor:#888;
+	    			color: $cor;
+	    			line-height: 20px;
+	    			text-decoration: none;
+	    			&:hover{
+	    				color:darken($cor, 6%);
+	    				text-decoration: underline;
+	    			}
+	    		}
+			}
+
+		}
+		.endereco{
+			display: inline-block;
+			border:$cinza solid 2px;
+			padding: 20px;
+		    margin-top: 20px;
+		    background: $cinza;
+		    color: darken($cinza, 30%);
+		}
+
+	}
+}
+footer.bottom{
+	background: #333;
+    height: 38px;
+    .cards{
+    	@include column(4);
+    	img{
+			width:100%;
+			margin-top: $margin-1/2;
+    	}
+
+    }
+    .copyright{
+    	@include column(6);
+    	color:white;
+    	font-size: 14px;
+    	font-weight: 300;
+
+    }
+    .by{
+    	@include column(2);
+    	color: white;
+    }
+}

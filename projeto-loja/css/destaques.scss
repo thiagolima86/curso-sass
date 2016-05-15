@@ -1,0 +1,18 @@
+.destaques{
+	margin-top: $margin-2;
+	h2{
+		@include column(5);
+	}
+	ul{
+		list-style: none;
+		margin-top: $margin-1;
+		li{
+			@include column(3);
+			text-align: center;
+			figcaption{
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+	}
+}
