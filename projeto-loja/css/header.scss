@@ -1,0 +1,98 @@
+header{
+	background:black;
+	height:100px;
+	@include container(fluid);
+
+	.logo{
+		@include column(2);
+		@include responsive(12, mobile);
+
+		figure{
+			width: 80px;
+			padding:30px 15px;;
+			background:white;
+			margin-top: $margin-1;
+			img{
+				width:100%;
+			}
+		}
+	}
+	.menu{
+		@include column(6);
+		@include responsive(12, mobile);
+		ul{
+			list-style: none;
+			margin-top:66px;
+			font-weight: 800;
+			color:lighten(black, 50%);
+			li{
+				background:$cinza;
+				float: left;
+				padding: 8px 15px;
+				margin-left:10px;
+				border-radius: 5px 5px 0 0;
+				cursor:pointer;
+				position:relative;
+				ul{
+					position:absolute;
+					display: block;
+					background:lighten($cinza, 10%);
+					top:0;
+					left:0;
+					margin-top: 35px;
+					max-height: 0;
+					overflow: hidden;
+					-webkit-transition: max-height 0.3s;
+					transition: max-height 0.3s;
+					width: 150px;
+					font-weight: 300;
+					z-index: 100;
+					li{
+						float: none;
+						border-radius:0;
+						background:transparent;
+						a{
+							color:black;
+							text-decoration: none;
+							&:hover{
+								color:lighten(black, 30%);
+							}
+						}
+					}
+				}
+				&:hover{
+					ul{
+						max-height: 200px;
+						border:darken($cinza, 15%) dashed 1px;
+						-webkit-transition: max-height 0.8s;
+						transition: max-height 0.8s;
+					}
+				}
+			}
+		}
+	}
+
+	form{
+		@include column(3);
+		@include push(1, desktop);
+		@include push(1, full);
+		@include responsive(4, tablet);
+		@include responsive(12, mobile);
+		input[type=search]{
+			width:100%;
+			height:40px;
+			font-size: 1.2em;
+			margin-top:28px;
+			border-radius:5px;
+			border:1px inset $cinza;
+		}
+	}
+}
+.banner{
+	@include clearfix();
+	@include column(12);
+	img{
+		width:100%;
+		height:auto;
+	}
+}
